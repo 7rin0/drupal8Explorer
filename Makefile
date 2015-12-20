@@ -1,2 +1,9 @@
+get_requirements:
+	sudo apt-get install php5-cli
+	curl -s http://getcomposer.org/installer | php; sudo mv composer.phar /usr/local/bin/composer; bash
+
+get_vendors:
+	composer install
+
 run_drupal_8:
 	php -S 127.0.0.1:7070 &
