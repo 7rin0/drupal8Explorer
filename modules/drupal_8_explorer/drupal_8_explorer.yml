@@ -1,0 +1,8 @@
+name: Drupal 8 Explorer Module
+description: Just a simple module like "Hello World"
+package: Drupal 8 Explorer
+
+type: module
+core: 8.x
+
+hidden: false
