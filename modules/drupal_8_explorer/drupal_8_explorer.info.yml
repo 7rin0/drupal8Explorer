@@ -1,7 +1,6 @@
 name: Drupal 8 Explorer Module
 description: Just a simple module like "Hello World"
-package: Drupal 8 Explorer
-
+package: 7rin0
 type: module
 core: 8.x
 
