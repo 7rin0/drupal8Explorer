@@ -10,3 +10,6 @@ run_drupal_8:
 
 clear_cache:
 	php bin/drush cr
+
+drupal_console_list:
+	php bin/dconsole list
