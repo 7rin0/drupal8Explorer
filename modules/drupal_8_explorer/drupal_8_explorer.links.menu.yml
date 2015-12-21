@@ -1,0 +1,6 @@
+drupal_8_explorer.admin:
+  title: 'Drupal 8 Explorer - settings'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: drupal_8_explorer.index
+  weight: 100
