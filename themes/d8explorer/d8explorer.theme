@@ -5,3 +5,23 @@
  * Date: 22/12/15
  * Time: 23:43
  */
+
+/**
+ * @param $variables
+ * @param $hook
+ * @param $info
+ */
+function d8explorer_preprocess(&$variables, $hook, $info) {
+}
+
+/**
+ * @param $variables
+ */
+function d8explorer_preprocess_html(&$variables) {
+}
+
+/**
+ * @param $variables
+ */
+function d8explorer_preprocess_page(&$variables) {
+}
