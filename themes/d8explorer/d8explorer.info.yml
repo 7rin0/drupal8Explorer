@@ -1,6 +1,6 @@
-name: D8Explorer
+name: D8explorer
 type: theme
-description: A theme called Drupal 8 Explorer and alised by D8Explorer, sometimes ...
+description: A simple Drupal 8 theme called D8explorer
 core: 8.x
 #libraries:
 #  - fluffiness/global-styling
