@@ -1,1 +1,7 @@
-# Not filled yet
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/main.css: {}
+      css/custom.css: {}
+      css/icomoon-social.css: {}
