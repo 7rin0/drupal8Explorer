@@ -24,4 +24,5 @@ function d8explorer_preprocess_html(&$variables) {
  * @param $variables
  */
 function d8explorer_preprocess_page(&$variables) {
+//    dump($variables);
 }
