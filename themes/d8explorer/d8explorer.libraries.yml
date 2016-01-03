@@ -1,13 +1,18 @@
 global-css:
-  version: 1.0
+  version: 1.x
   css:
     base:
+      # External
+      //maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css : { type: external, minified: true }
+      //maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css : { type: external, minified: true }
+      //fonts.googleapis.com/css?family=Open+Sans:400,700,600,800 : { type: external, minified: true }
+      # Internal
       Resources/public/css/main.css: {}
       Resources/public/css/custom.css: {}
       Resources/public/css/icomoon-social.css: {}
 
 global-js:
-  version: 1.0
+  version: 1.x
   js:
-    base:
-      Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js: {}
+    Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js: { minified: true }
+    //use.edgefonts.net/bebas-neue.js : { type: external, minified: true }

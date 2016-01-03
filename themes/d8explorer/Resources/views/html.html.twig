@@ -35,18 +35,12 @@
 <html{{ html_attributes }}>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <css-placeholder token="{{ placeholder_token|raw }}">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
-    <script src="//use.edgefonts.net/bebas-neue.js"></script>
     <js-placeholder token="{{ placeholder_token|raw }}">
-
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     <!--[if lt IE 7]>
