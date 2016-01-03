@@ -7,7 +7,8 @@
     "composer/installers": "^1.0.21",
     "wikimedia/composer-merge-plugin": "~1.3",
     "symfony/console": "2.7.*",
-    "drush/drush": "8.*"
+    "drush/drush": "8.*",
+    "symfony/web-profiler-bundle": "2.8.0"
   },
   "replace": {
     "drupal/core": "~8.0"
