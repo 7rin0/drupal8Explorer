@@ -1,5 +1,5 @@
 global-css:
-  version: 1.x
+  version: VERSION
   css:
     base:
       # External
@@ -12,7 +12,7 @@ global-css:
       Resources/public/css/icomoon-social.css: {}
 
 global-js:
-  version: 1.x
+  version: VERSION
   js:
-    Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js: { minified: true }
-    //use.edgefonts.net/bebas-neue.js : { type: external, minified: true }
+    Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js : { minified: true }
+#    //use.edgefonts.net/bebas-neue.js : { type: external, minified: true }
