@@ -1,7 +1,13 @@
-global-styling:
+global-css:
   version: 1.0
   css:
     base:
       Resources/public/css/main.css: {}
-      Resources/public/custom.css: {}
-      Resources/public/icomoon-social.css: {}
+      Resources/public/css/custom.css: {}
+      Resources/public/css/icomoon-social.css: {}
+
+global-js:
+  version: 1.0
+  js:
+    base:
+      Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js: {}

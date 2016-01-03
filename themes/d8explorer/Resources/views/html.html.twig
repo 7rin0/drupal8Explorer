@@ -45,7 +45,6 @@
     <css-placeholder token="{{ placeholder_token|raw }}">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
     <script src="//use.edgefonts.net/bebas-neue.js"></script>
-    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <js-placeholder token="{{ placeholder_token|raw }}">
 
   </head>
@@ -65,8 +64,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+    {#<script src="{{ asset() }}js/jquery.easing.min.js"></script>#}
+    {#<script src="{{ path() }}js/scrolling-nav.js"></script>#}
 
   </body>
 </html>
