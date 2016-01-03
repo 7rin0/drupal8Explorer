@@ -34,3 +34,6 @@ sites/simpletest
 
 # Ignore PHPStorm files
 .idea
+
+# Ignore nohup file
+nohup.out
