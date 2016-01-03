@@ -11,8 +11,15 @@ global-css:
       Resources/public/css/custom.css: {}
       Resources/public/css/icomoon-social.css: {}
 
-global-js:
+global-header-js:
+  version: VERSION
+  header: true
+  js:
+    Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js : { minified: true }
+    //use.edgefonts.net/bebas-neue.js : { type: external }
+
+global-footer-js:
   version: VERSION
   js:
     Resources/public/js/min/modernizr-2.6.2-respond-1.1.0.min.js : { minified: true }
-#    //use.edgefonts.net/bebas-neue.js : { type: external, minified: true }
+    //use.edgefonts.net/bebas-neue.js : { type: external }
