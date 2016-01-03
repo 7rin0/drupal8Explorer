@@ -699,6 +699,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * example.org, with all subdomains included.
  */
 
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config_JssVf23u3iGCDETVy3nmN94kjcZfCzJ2z46uR_rO58KAvXB5Rfmn9PbxAhqU4q-2R75I5g6jjA/sync';
+
 /**
  * Load local development override configuration, if available.
  *
@@ -710,13 +713,12 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * Keep this code block at the end of this file to take full effect.
  */
 if (file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
+    include __DIR__ . '/settings.local.php';
 }
+
 $databases['default']['default'] = array (
-  'database' => 'sites/default/files/.ht.sqlite',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
+    'database' => 'sites/default/files/.ht.sqlite',
+    'prefix' => '',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+    'driver' => 'sqlite',
 );
-$settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_JssVf23u3iGCDETVy3nmN94kjcZfCzJ2z46uR_rO58KAvXB5Rfmn9PbxAhqU4q-2R75I5g6jjA/sync';

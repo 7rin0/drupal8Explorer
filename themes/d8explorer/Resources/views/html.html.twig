@@ -40,6 +40,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <css-placeholder token="{{ placeholder_token|raw }}">
+    {{ attach_library('d8explorer/global-js-header') }}
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
@@ -54,10 +55,7 @@
     {{ page_top }}
     {{ page }}
     {{ page_bottom }}
+    {{ attach_library('d8explorer/global-js-footer') }}
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    {#<script src="{{ asset() }}js/jquery.easing.min.js"></script>#}
-    {#<script src="{{ path() }}js/scrolling-nav.js"></script>#}
   </body>
 </html>
