@@ -1,12 +1,9 @@
 name: D8explorer
 type: theme
-description: A simple Drupal 8 theme called D8explorer
+description: A simple Drupal 8 theme called d8explorer
 core: 8.x
 libraries:
   - d8explorer/global-styling
-#stylesheets-remove:
-#  - '@classy/css/components/tabs.css'
-#  - core/assets/vendor/normalize-css/normalize.css
 regions:
   header: Header
   content: Content
