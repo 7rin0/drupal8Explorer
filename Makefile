@@ -6,7 +6,7 @@ get_vendors:
 	composer install
 
 run_drupal_8:
-	php -S 127.0.0.1:7070 &
+	nohup php -S 127.0.0.1:7070 &
 
 clear_cache:
 	php bin/drush cr
