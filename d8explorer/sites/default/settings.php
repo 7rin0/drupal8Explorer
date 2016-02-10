@@ -717,8 +717,10 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 }
 
 $databases['default']['default'] = array (
-    'database' => 'sites/default/database/d8explorer.sqlite',
-    'prefix' => '',
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-    'driver' => 'sqlite',
+    'driver' => 'mysql',
+    'database' => 'd8sandbox',
+    'username' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'port' => '3306',
 );
