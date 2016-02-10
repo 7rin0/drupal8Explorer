@@ -5,6 +5,7 @@ sudo update-grub
 
 # Default variables to no interaction installations
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 
 # Update packages
 sudo apt-get -f install -y
