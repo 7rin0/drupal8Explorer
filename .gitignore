@@ -35,5 +35,8 @@ sites/simpletest
 # Ignore PHPStorm files
 .idea
 
+# Ignore Vagrant install
+/vagrant/.vagrant
+
 # Ignore nohup file
 nohup.out
