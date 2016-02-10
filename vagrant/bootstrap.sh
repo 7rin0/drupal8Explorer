@@ -3,12 +3,12 @@
 sudo cp -f /vagrant/grub/grub /etc/default/grub
 sudo update-grub
 
+# Default variables to no interaction installations
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+
 # Update packages
 sudo apt-get -f install -y
 sudo apt-get update -y && sudo apt-get upgrade -y
-
-# Default variables to no interaction installations
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password your_password'sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password your_password'
 
 # Install LAMP
 sudo apt-get install apache2 -y
