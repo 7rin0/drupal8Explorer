@@ -17,7 +17,10 @@
   "prefer-stable": true,
   "config": {
     "preferred-install": "dist",
-    "autoloader-suffix": "Drupal8"
+    "autoloader-suffix": "Drupal8",
+    "github-oauth": {
+      "github.com": "f0502ecd3d7c8e7e47223616c177b869180a3e05"
+    }
   },
   "extra": {
     "_readme": [
