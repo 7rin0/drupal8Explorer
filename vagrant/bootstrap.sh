@@ -16,6 +16,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
 # Install LAMP
 sudo DEBIAN_FRONTEND=noninteractive apt-get install apache2 -y
+sudo cp -f /vagrant/configs/000-default.conf /etc/apache2/sites-available/000-default.conf
+sudo sed -i -e '1 i\ ServerName localhost ' /etc/apache2/apache2.conf
 sudo DEBIAN_FRONTEND=noninteractive apt-get install mysql-server -y
 sudo apt-get install php5 libapache2-mod-php5 -y
 sudo apt-get install php5-mcrypt php5-curl php5-gd php5-cli -y
@@ -24,20 +26,25 @@ sudo a2enmod rewrite
 # Install Environment
 sudo DEBIAN_FRONTEND=noninteractive apt-get install git -y
 #sudo DEBIAN_FRONTEND=noninteractive apt-get install jenkins -y
+sudo curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/bin/composer
+sudo composer config -g github-oauth.github.com f0502ecd3d7c8e7e47223616c177b869180a3e05
 
-# Install D8 App
+# Install cache accelerators and server services
+sudo apt-get php5-memcache memcached php-pear
+sudo pecl install memcache
+echo "extension=memcache.so" | sudo tee /etc/php5/conf.d/memcache.ini
+
+# Install Drush and Setup a Drupal 8 project
 sudo DEBIAN_FRONTEND=noninteractive apt-get install drush -y
-sudo cp -f /vagrant/configs/000-default.conf /etc/apache2/sites-available/000-default.conf
 sudo mysql -u root -proot -h localhost -e'create database d8sandbox'
 sudo mkdir -p /var/www/drupal8/sites/default/files
 sudo mkdir -p /var/www/drupal8/sites/default/files/translations
 sudo chmod -R 755 * && sudo chmod -R 755 .*
 sudo chmod -R 777 /var/www/drupal8/sites/default/files/translations
-sudo curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/bin/composer
-cd /var/www/drupal8 && sudo composer install --no-interaction --prefer-source
-# sudo drush dl drupal-8 --destination=/var/www --drupal-project-rename="autoInstall"
+#cd /var/www/drupal8 && sudo composer install --no-interaction --prefer-source
+sudo drush dl drupal-8 --destination=/var/www --drupal-project-rename="d8sandbox"
+cd /var/www/d8sandbox && sudo composer install --no-interaction --prefer-source
 
 # Restart services
-sudo sed -i -e '1iServerName localhost\' /etc/apache2/apache2.conf
 sudo /etc/init.d/apache2 restart -y
 
