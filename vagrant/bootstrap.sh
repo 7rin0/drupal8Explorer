@@ -32,7 +32,7 @@ sudo curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /
 sudo composer config -g github-oauth.github.com f0502ecd3d7c8e7e47223616c177b869180a3e05
 
 # Install cache accelerators and server services
-sudo apt-get install php5-memcache memcached php-pear
+sudo apt-get install php5-memcache memcached php-pear -y
 sudo pecl install memcache
 echo "extension=memcache.so" | sudo tee /etc/php5/apache2/conf.d/memcache.ini
 
@@ -45,7 +45,7 @@ sudo mkdir -p /var/www/d8sandbox/sites/default/files/translations
 sudo chmod -R 777 /var/www/d8sandbox/sites/default/files
 cd /var/www/d8sandbox && sudo composer install --no-interaction --prefer-source
 sudo cp -f /vagrant/configs/settings.php /var/www/d8sandbox/sites/default/settings.php
-cd && sudo ln -nsf /var/www/d8sandbox
+sudo ln -nsf /var/www/d8sandbox ~
 
 # Restart services
 sudo /etc/init.d/apache2 restart -y

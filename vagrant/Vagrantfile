@@ -36,4 +36,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # A script to init out machine's environment
   config.vm.provision :shell, path: "bootstrap.sh"
+
+  # nohup xdg-open http://192.168.75.57/core/install.php &
 end
