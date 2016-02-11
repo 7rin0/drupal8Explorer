@@ -34,7 +34,7 @@ sudo mkdir -p /var/www/drupal8/sites/default/files/translations
 sudo chmod -R 755 * && sudo chmod -R 755 .*
 sudo chmod -R 777 /var/www/drupal8/sites/default/files/translations
 sudo curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/bin/composer
-cd /var/www/drupal8 && sudo composer install --no-interaction
+cd /var/www/drupal8 && sudo composer install --no-interaction --prefer-source
 # sudo drush dl drupal-8 --destination=/var/www --drupal-project-rename="autoInstall"
 
 # Restart services
