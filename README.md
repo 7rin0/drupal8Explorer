@@ -2,7 +2,7 @@
 
 ## Quick steps
 
-#### git clone git@github.com:7rin0/drupal8Explorer.git
+#### https://github.com/7rin0/drupal8Explorer.git
 
 #### cd drupal8Explorer/vagrant
 
