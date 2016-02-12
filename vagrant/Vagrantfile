@@ -32,7 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # The first argument is the path on the host to the actual folder.
   # The second argument is the path on the guest to mount the folder.
   # The optional third argument is a set of non-required options.
-  config.vm.synced_folder "../app/drupal/8", "/var/www/drupal8", id: "vagrant-root", owner: "vagrant", group: "www-data", mount_options: ["dmode=775,fmode=664"]
+  # config.vm.synced_folder "../app/drupal/8", "/var/www/d8sandbox", id: "vagrant-root", owner: "vagrant", group: "www-data", mount_options: ["dmode=775,fmode=664"]
 
   # A script to init out machine's environment
   config.vm.provision :shell, path: "bootstrap.sh"

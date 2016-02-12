@@ -37,17 +37,17 @@ echo "extension=memcache.so" | sudo tee /etc/php5/apache2/conf.d/memcache.ini
 
 # Install Drush and Setup a Drupal 8 project
 sudo DEBIAN_FRONTEND=noninteractive apt-get install drush -y
-sudo drush dl drupal-8 --destination=/var/www --drupal-project-rename="d8sandbox" -y
+sudo drush dl drupal-8 --destination=/vagrant/app/drupal --drupal-project-rename="8" -y
 sudo mysql -u root -proot -h localhost -e'create database d8sandbox'
-sudo mkdir -p /var/www/d8sandbox/sites/default/files
-sudo mkdir -p /var/www/d8sandbox/sites/default/files/translations
-sudo chmod -R 777 /var/www/d8sandbox/sites/default/files
-cd /var/www/d8sandbox && sudo composer install --no-interaction --prefer-source
+sudo mkdir -p /vagrant/app/drupal/8/sites/default/files
+sudo mkdir -p /vagrant/app/drupal/8/sites/default/files/translations
+sudo chmod -R 777 /vagrant/app/drupal/8/sites/default/files
+cd /vagrant/app/drupal/8 && sudo composer install --no-interaction --prefer-source
 
 # Update vhost
-sudo cp -f /vagrant/configs/settings.php /var/www/d8sandbox/sites/default/settings.php
+sudo cp -f /vagrant/configs/settings.php /vagrant/app/drupal/8/sites/default/settings.php
 sudo cp -f /vagrant/configs/000-default.conf /etc/apache2/sites-available/000-default.conf
-sudo ln -nsf /var/www/d8sandbox ~/
+sudo ln -nsf /vagrant/app/drupal/8 ~/
 
 # Restart services
 sudo /etc/init.d/apache2 restart -y
