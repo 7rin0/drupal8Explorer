@@ -1,4 +1,0 @@
-services:
-  geolocation.core:
-    class: Drupal\geolocation\GeolocationCore
-    arguments: ["@module_handler", "@entity.manager"]

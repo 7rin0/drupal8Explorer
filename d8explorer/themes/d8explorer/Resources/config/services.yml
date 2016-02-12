@@ -1,5 +1,0 @@
-imports:
-    - { resource: extensions.yml }
-    - { resource: form_types.yml }
-
-services:

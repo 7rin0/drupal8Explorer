@@ -1,7 +1,0 @@
-drupal_8_explorer.index:
-  path: '/drupal-8-explorer'
-  defaults:
-    _controller: '\Drupal\drupal_8_explorer\Controller\Drupal8ExplorerController::index'
-    _title: Drupal 8 Explorer - Index
-  requirements:
-    _permission: 'access content'
