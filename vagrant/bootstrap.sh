@@ -17,7 +17,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
 # Install LAMP
 sudo DEBIAN_FRONTEND=noninteractive apt-get install apache2 -y
-sudo cp -f /vagrant/configs/000-default.conf /etc/apache2/sites-available/000-default.conf
 sudo sed -i -e '1 i\ ServerName localhost ' /etc/apache2/apache2.conf
 sudo DEBIAN_FRONTEND=noninteractive apt-get install mysql-server -y
 sudo apt-get install php5 libapache2-mod-php5 -y
@@ -44,8 +43,11 @@ sudo mkdir -p /var/www/d8sandbox/sites/default/files
 sudo mkdir -p /var/www/d8sandbox/sites/default/files/translations
 sudo chmod -R 777 /var/www/d8sandbox/sites/default/files
 cd /var/www/d8sandbox && sudo composer install --no-interaction --prefer-source
+
+# Update vhost
 sudo cp -f /vagrant/configs/settings.php /var/www/d8sandbox/sites/default/settings.php
-sudo ln -nsf /var/www/d8sandbox ~
+sudo cp -f /vagrant/configs/000-default.conf /etc/apache2/sites-available/000-default.conf
+sudo ln -nsf /var/www/d8sandbox ~/
 
 # Restart services
 sudo /etc/init.d/apache2 restart -y
