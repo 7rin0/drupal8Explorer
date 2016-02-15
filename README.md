@@ -1,4 +1,4 @@
-##(This application were moved to https://github.com/7rin0/vagrantApps and is ready to run more PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress and more ...) 
+## This application were moved to https://github.com/7rin0/vagrantApps and is ready to run more PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress and more ...
 
 ## Vagrant VM ready for Drupal 8
 
