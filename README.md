@@ -1,13 +1,15 @@
-# Vagrant VM ready for Drupal 8
+#(This application were moved to https://github.com/7rin0/vagrantApps and is ready to run more PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress and more ...) 
 
-## Quick steps
+## Vagrant VM ready for Drupal 8
 
-#### git clone https://github.com/7rin0/drupal8Explorer.git
+### Quick steps
 
-#### cd drupal8Explorer/vagrant
+##### git clone https://github.com/7rin0/drupal8Explorer.git
 
-#### vagrant up
+##### cd drupal8Explorer/vagrant
 
-#### go to : http:///192.168.75.57/core/install.php
+##### vagrant up
 
-## Enjoy!
+##### go to : http:///192.168.75.57/core/install.php
+
+### Enjoy!
