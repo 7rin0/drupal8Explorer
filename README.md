@@ -1,7 +1,9 @@
 # VagrantApps - Automated install of PHP based Applications
 Automated installation of Drupal 8 
 
-This application is being developed and updated at https://github.com/7rin0/vagrantApps repository allong many other PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress ...
+This application is being developed and updated at https://github.com/7rin0/vagrantApps repository along many other applications like Symfony 2/3/Sonata, Drupal 7/8, Wordpress 4 ...
+
+Here you will find only an automated installation of Drupal 8
 
 - - - - - - - - - - - - - - -
 
