@@ -727,7 +727,7 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 }
 
 $databases['default']['default'] = array (
-    'database' => 'd8sandbox',
+    'database' => 'drupal_8',
     'username' => 'root',
     'password' => 'root',
     'host' => 'localhost',

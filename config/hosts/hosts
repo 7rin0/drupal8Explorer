@@ -1,0 +1,5 @@
+192.168.75.57 wordpress-4.vm
+192.168.75.57 drupal-7.vm drupal-8.vm
+192.168.75.57 symfony-2.vm symfony-3.vm
+192.168.75.58 sonata.vm
+# 192.168.75.57 seven-manager.vm

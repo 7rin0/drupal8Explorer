@@ -1,11 +1,15 @@
-# Ignore all to allow git cloned projects being installed
-/vagrant/app
+# Ignore project current folders
+app/drupal/8/current
+app/drupal/8/releases
 
 # Ignore PHPStorm files
 .idea
+*.zip
+*.swp
 
 # Ignore Vagrant install
-/vagrant/.vagrant
+.vagrant
+html
 
 # Ignore nohup file
 nohup.out

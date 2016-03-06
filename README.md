@@ -1,15 +1,32 @@
-## This application was moved to https://github.com/7rin0/vagrantApps and is ready to run more PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress and more ...
+# VagrantApps - Automated install of PHP based Applications
+Automated installation of Drupal 8 
 
-## Vagrant VM ready for Drupal 8
+This application is being developed and updated at https://github.com/7rin0/vagrantApps repository allong many other PHP Structures like Symfony 2/3/Sonata, Drupal 7/8, Wordpress ...
 
-### Quick steps
+- - - - - - - - - - - - - - -
 
-##### git clone https://github.com/7rin0/drupal8Explorer.git
+## Requirements
+- Virtualbox >= 4.3.36
+- Vagrant >= 1.6.0
+- Git >= 1.6
 
-##### cd drupal8Explorer/vagrant
+## Recommended
+'A Vagrant plugin to keep your VirtualBox Guest Additions up to date'
+- vagrant plugin install vagrant-vbguest
 
-##### vagrant up
+## Add to your hosts
+- 192.168.75.57   drupal-8.vm
 
-##### go to : http:///192.168.75.57/core/install.php
+## Installation
+Choose a preferred directory to work and lets go!
+- git clone https://github.com/7rin0/drupal8Explorer.git
+- cd drupal8Explorer
+- vagrant up
 
-### Enjoy!
+## Project URL
+http://drupal-8.vm/
+
+## Project path
+The project can be found and developed at ./app/drupal/8/current
+
+## Enjoy!
