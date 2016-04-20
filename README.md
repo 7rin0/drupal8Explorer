@@ -13,16 +13,16 @@ Here you will find only an automated installation of Drupal 8
 
 ## Recommended
 'A Vagrant plugin to keep your VirtualBox Guest Additions up to date'
-- vagrant plugin install vagrant-vbguest
+- ``` vagrant plugin install vagrant-vbguest ``` 
 
 ## Add to your hosts
 - 192.168.75.57   drupal-8.vm
 
 ## Installation
 Choose a preferred directory to work and lets go!
-- git clone https://github.com/7rin0/drupal8Explorer.git
-- cd drupal8Explorer
-- vagrant up
+-  ``` git clone https://github.com/7rin0/drupal8Explorer.git ``` 
+-  ``` cd drupal8Explorer ``` 
+-  ``` vagrant up ``` 
 
 ## Project URL
 http://drupal-8.vm/
