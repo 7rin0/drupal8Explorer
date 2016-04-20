@@ -43,7 +43,7 @@ echo "extension=memcache.so" | sudo tee /etc/php5/apache2/conf.d/memcache.ini
 
 ### Project Auto Installer ###
 ## Add all possible hosts to machine to avoid duplications
-sudo cat /vagrant/config/hosts/hosts >> /etc/hosts
+sudo cat /vagrant/config/hosts/hosts | sudo tee --append /etc/hosts
 
 # Install Drupal 8
 . /vagrant/app/drupal/8/config/requirements.sh
